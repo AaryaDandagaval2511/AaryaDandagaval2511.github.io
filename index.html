@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aarya Dandagaval — Portfolio</title>
+  <title>Your Name — Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,6 +27,7 @@
       line-height: 1.75;
     }
 
+    /* ── Layout ── */
     .wrapper {
       max-width: 980px;
       margin: 0 auto;
@@ -70,6 +71,7 @@
 
     nav a:hover, nav a.active { color: var(--text); }
 
+    /* ── Main layout ── */
     main {
       display: flex;
       gap: 3.5rem;
@@ -80,6 +82,7 @@
       padding-right: 2rem;
     }
 
+    /* ── Sidebar ── */
     aside {
       width: var(--sidebar-w);
       flex-shrink: 0;
@@ -152,6 +155,7 @@
 
     .sidebar-meta a:hover { text-decoration: underline; }
 
+    /* ── Content ── */
     .content {
       flex: 1;
       min-width: 0;
@@ -184,6 +188,7 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
+    /* ── Research tags ── */
     .research-list { list-style: none; margin-top: 0.5rem; }
 
     .research-list li {
@@ -215,6 +220,7 @@
       font-weight: 400;
     }
 
+    /* ── Projects ── */
     .project-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -247,6 +253,7 @@
     .project-card .links { font-size: 13px; }
     .project-card .links a { margin-right: 10px; }
 
+    /* ── Publications ── */
     .pub-list { list-style: none; }
 
     .pub-list li {
@@ -269,6 +276,7 @@
       margin-left: 6px;
     }
 
+    /* ── Responsive ── */
     @media (max-width: 680px) {
       main { flex-direction: column; }
       aside { width: 100%; }
@@ -281,7 +289,7 @@
 
 <header>
   <div class="inner">
-    <a href="#about" class="logo">Aarya Dandagaval</a>
+    <a href="#about" class="logo">Your Name</a>
     <nav>
       <a href="#about" class="active">About</a>
       <a href="#research">Research</a>
@@ -293,28 +301,33 @@
 
 <main>
 
+  <!-- ── Sidebar ── -->
   <aside>
-    <div class="photo-placeholder">AD</div>
+    <!-- Option A: Replace photo.jpg with your actual photo file name -->
+    <!-- <img src="photo.jpg" alt="Your Name" class="profile-photo" /> -->
 
-    <div class="sidebar-name">Aarya Dandagaval</div>
-    <div class="sidebar-title">Computer Science Undergraduate<br>BITS Pilani, Goa Campus</div>
+    <!-- Option B: Initials placeholder (remove once you add a photo) -->
+    <div class="photo-placeholder">YN</div>
+
+    <div class="sidebar-name">Your Name</div>
+    <div class="sidebar-title">Your Role / Year<br>Your College / University</div>
 
     <ul class="sidebar-meta">
       <li>
         <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 1.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zM2 14.5s0-3 6-3 6 3 6 3"/></svg>
-        Mumbai, India
+        Your City, India
       </li>
       <li>
         <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1.5" y="3.5" width="13" height="10" rx="1.5"/><path d="M1.5 6l6.5 4 6.5-4"/></svg>
-        <a href="mailto:aarya.dan7@gmail.com">aarya.dan7@gmail.com</a>
+        <a href="mailto:you@example.com">you@example.com</a>
       </li>
       <li>
         <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5v4l2.5 2"/></svg>
-        <a href="https://github.com/AaryaDandagaval2511" target="_blank">GitHub</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
       </li>
       <li>
         <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1.5" y="1.5" width="13" height="13" rx="2"/><path d="M5 7v5M5 4.5v.5M8 7v5M11 7v3a2 2 0 01-3 0"/></svg>
-        <a href="https://linkedin.com/in/aarya-dandagaval-1736512a9" target="_blank">LinkedIn</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
       </li>
       <li>
         <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12L8 2l6 10H2z"/></svg>
@@ -323,19 +336,140 @@
     </ul>
   </aside>
 
+  <!-- ── Main Content ── -->
   <div class="content">
 
+    <!-- About -->
     <section id="about">
       <h1>About</h1>
       <p>
-        I am a Computer Science undergraduate at BITS Pilani, Goa Campus. My interests lie at the intersection of artificial intelligence, machine learning, and software systems. I enjoy building data-driven applications and applying machine learning to real-world problems.
+        I am a Computer Science undergraduate at BITS Pilani, Goa Campus. My work lies at the intersection of artificial intelligence, machine learning, and software systems, with a focus on building practical, data-driven applications.
       </p>
       <p>
-        You can mention your current role, institution, or what you're working towards. For example: I am a [Year] student at <a href="#">[Your College]</a>, majoring in [Your Major]. I am interested in [broad area] and [specific area].
+        I have experience working on real-world systems including an AI-assisted training scheduler and hyperspectral image classification using deep learning. I am particularly interested in applying machine learning to complex, high-dimensional data and system-level problems.
       </p>
       <p>
-        Add any notable past experience — internships, research positions, exchange programs, etc.
+        I am currently exploring projects involving anomaly detection, explainable AI, and scalable backend systems, with the goal of building impactful, production-ready solutions.
       </p>
     </section>
 
-    <!-- REST UNCHANGED -->
+    <!-- Research / Interests -->
+    <section id="research">
+      <h1>Research &amp; Interests</h1>
+      <p>
+        Briefly describe the broad themes you care about. You can replace the bullets below with your own areas.
+      </p>
+
+      <ul class="research-list" style="margin-top: 1.2rem;">
+        <li>
+          <strong>Machine Learning & AI — Building models for real-world data and decision systems.</strong>
+          <p style="font-size:13.5px; color:var(--muted); margin-top:4px; margin-bottom:6px;">
+            Interested in deep learning, representation learning, and explainability, especially in high-dimensional domains like hyperspectral imaging and real-world datasets.
+          </p>
+          <div class="tags">
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Explainable AI</span>
+          </div>
+        </li>
+        <li>
+          <strong>Data Systems & Backend Development — Designing scalable, data-driven applications.</strong>
+          <p style="font-size:13.5px; color:var(--muted); margin-top:4px; margin-bottom:6px;">
+            Experience building full-stack applications with databases, focusing on efficient data handling, querying, and system design for real-world use cases.
+          </p>
+          <div class="tags">
+            <span class="tag">Flask</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">System Design</span>
+          </div>
+        </li>
+        <li>
+          <strong>Applied AI Systems — Bridging ML models with real-world applications.</strong>
+          <p style="font-size:13.5px; color:var(--muted); margin-top:4px; margin-bottom:6px;">
+            Interested in integrating machine learning with user-facing systems, including chatbots, recommendation systems, and intelligent monitoring tools.
+          </p>
+          <div class="tags">
+            <span class="tag">LLMs</span>
+            <span class="tag">Recommender Systems</span>
+            <span class="tag">Anomaly Detection</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h1>Projects</h1>
+      <p style="margin-bottom: 1.2rem;">
+        This is the main reason to have a portfolio — show work you've done that doesn't fit on a resume.
+      </p>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <h3>AI Crop Disease Detection (Hyperspectral Imaging)</h3>
+          <p>Built a deep learning pipeline using 3D CNNs on hyperspectral datasets (200+ spectral bands) for crop classification and disease detection. Implemented preprocessing, spectral band optimization, and explored explainable modeling techniques.</p>
+          <div class="tags" style="margin-bottom: 10px;">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+          <div class="links">
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>WRLDC Training Scheduler System</h3>
+          <p>Developed a Flask-based web application to manage and recommend training programs. Integrated PostgreSQL database with search, filtering, and insertion features, along with an AI chatbot for natural language queries.</p>
+          <div class="tags" style="margin-bottom: 10px;">
+            <span class="tag">Flask</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Full Stack</span>
+          </div>
+          <div class="links">
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Hyperspectral Data Analysis Pipeline</h3>
+          <p>Built preprocessing and analysis pipelines for high-dimensional hyperspectral datasets, including dimensionality reduction and visualization for improved model performance.</p>
+          <div class="tags" style="margin-bottom: 10px;">
+            <span class="tag">Python</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+          <div class="links">
+            <a href="#">Report ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Intelligent Grid Anomaly Detection System (Proposed)</h3>
+          <p>Designed a system to detect anomalies in power grid logs using pattern recognition and machine learning techniques, focusing on real-time monitoring and scalable architecture.</p>
+          <div class="tags" style="margin-bottom: 10px;">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Time Series</span>
+            <span class="tag">Systems</span>
+          </div>
+          <div class="links">
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Publications (optional — remove if not applicable) -->
+    <section id="publications">
+      <h1>Publications &amp; Writing</h1>
+      <p style="margin-bottom: 1.2rem;">
+        Currently no formal publications. This section will be updated with research papers, reports, or technical writing.
+      </p>
+    </section>
+
+  </div><!-- /content -->
+</main>
+
+</body>
+</html>
